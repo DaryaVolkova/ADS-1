@@ -13,7 +13,7 @@ bool checkPrime(uint64_t value) {
 }
 
 uint64_t nPrime(uint64_t n) {
-    int tmp = 1;
+    uint64_t tmp = 1;
     while (n > 0) {
         tmp++;
         if (checkPrime(tmp)) {
@@ -24,7 +24,7 @@ uint64_t nPrime(uint64_t n) {
 }
 
 uint64_t nextPrime(uint64_t value) {
-    int tmp = value;
+    uint64_t tmp = value;
     bool flag = false;
     while (!flag) {
         tmp++;
